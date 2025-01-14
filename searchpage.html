@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5681/5681698.png">
+    <title>Pesquisas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #3121a;
+            padding: 20px; 
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            width: 100%; 
+            max-width: 600px; 
+        }
+
+        .container img{
+            width: 85%;
+        }
+
+        h3 {
+            padding: 0 0 17px;
+            text-align: center; 
+        }
+
+        form {
+            display: flex;
+            flex-direction: column; 
+            width: 70%; 
+            align-items: center; 
+        }
+
+        .input-user {
+            width: 90%; /* Largura responsiva */
+            height: 50px;
+            padding: 10px;
+            font-weight: 600;
+            color: #222222;
+            border-radius: 10px;
+            background: #00ff22af;
+            border: none;
+            transition: .3s ease;
+            margin-bottom: 10px; 
+        }
+
+        .input-user::placeholder {
+            font-weight: 600;
+            font-size: 13px;
+            position: absolute;
+            left: 6.5rem;
+            color: #202020;
+            opacity: 87%;
+        }
+
+        .input-user:hover {
+            background: #00be19af;
+        }
+
+        .search {
+            width: 40%; 
+            height: 45px;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            border-radius: 10px;
+            background: #00ff22af;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+
+        .search:hover {
+            background: #00be19af;
+        }
+
+        
+        @media (max-width: 600px) {
+            .input-user {
+                width: 100%; 
+            }
+
+            .input-user::placeholder{
+                position: inherit;
+                
+            }
+
+            .search {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./mobile-encryption-animate.svg" style="max-width: 100%; height: auto;"> 
+        <h3>Realize sua pesquisa</h3>
+        <form action="https://google.com/search" method="get" target="_blank">
+            <input type="text" class="input-user" name="q" placeholder="Flamengo, Brasil, Notícias">
+            <input type="submit" class="search" value="Buscar"> 
+        </form>
+    </div>
+</body>
+</html>
