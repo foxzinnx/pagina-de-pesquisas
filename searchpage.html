@@ -116,5 +116,14 @@
             <input type="submit" class="search" value="Buscar"> 
         </form>
     </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function (e) {
+            const input = document.querySelector('.input-user').value.trim(); 
+            if (!input) {
+                e.preventDefault(); 
+                alert('Por favor, digite algo antes de buscar.'); 
+            }
+        });
+    </script>
 </body>
 </html>
